@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name=viewport content="width=device-width,initial-scale=1, shrink-to-fit=no">  
+		<meta charset="utf-8"/>
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<div class="container-fluid main">
+			<div class="row">
+				<div class="col-xs-4 logo-holder">
+					<img class="logo" src="logocircless.png" alt="UCT logo" />
+				</div>
+				<div class="col-xs-4 title-holder">
+					<div class="title">ConVect</div>
+					<div class="subtitle">Vector Construction Tool</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-6 applet-holder">
+					<span id="loadbay">Loading...</span>
+				   	<div id="ggb-element"></div>
+				</div>
+			</div>
+
+			<div class="row backplate">
+				<div class="col-xs-6">
+					<table>
+						<tbody>
+							<tr class="detail">
+								<td class="label">
+									<span>Object:</span>
+								</td>
+								<td class="value">
+									<span id="selected-object"></span>
+								</td>
+							</tr>
+							<tr class="detail">
+								<td class="label">
+									<span >Name:</span>
+								</td>
+								<td class="value">
+									<input class="input" id="selected-name" type="text"></input>
+								</td>
+							</tr>
+							<tr class="detail" id="mag-detail">
+								<td class="label">
+									<span>Magnitude:</span>
+								</td>
+								<td class="value">
+									<input class="input" id="selected-mag" type="text"></input>
+								</td>
+							</tr>
+							<tr class="detail" id="radius-detail" style="display: none">
+								<td class="label">
+									<span>Radius:</span>
+								</td>
+								<td class="value">
+									<input class="input" id="selected-radius" type="text"></input>
+								</td>
+							</tr>
+							<tr class="detail">
+								<td class="label">
+									<span>Angle:</span>
+								</td>
+								<td class="value">
+									<input class="input" id="selected-angle-deg" type="text"></input>°
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+		<script src="convect_main.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</body>
+</html>

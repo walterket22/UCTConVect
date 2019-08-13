@@ -1,0 +1,91 @@
+.main {
+	margin: 1rem;
+}
+
+.logo-holder {
+	max-width: 7rem;
+	text-align: center;
+	align-content: center;
+}
+
+.logo {
+	text-align: center;
+	width: 100%;
+	height: auto;
+	max-width: calc(70px + 4vw);
+	min-width: 70px;
+}
+
+.title-holder {
+	margin: 1rem;
+	text-align: center;	
+}
+
+.title {
+	font-weight: bold;
+	font-size: calc(24px + 2vw);
+	line-height: 1;
+	vertical-align: middle;
+}
+
+.subtitle {
+	color: #0099FF;
+	font-size: calc(8px + 0.8vw);
+	vertical-align: middle;
+}
+
+.applet-holder {
+	margin-top: 0.5rem;
+	max-width: 1000px;
+}
+
+.backplate {
+	background: lightsteelblue;
+	border: 2px;
+	border-color: steelblue;
+
+	padding: 10px;
+
+	max-width: 1000px;
+
+	color: #3B5957;
+    background-color: #5D8D89;
+    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+    font-size: x-large;
+
+    border:6px outset #9a9;
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.backplate .detail {
+	margin-top: 0.5rem;
+}
+
+.backplate .input {
+	border: 2px inset #9a9;
+	-webkit-box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
+
+	width: 5rem;
+	text-align: right;
+	padding-right: 0.3rem;
+}
+
+.backplate .name-input {
+	border: 2px inset #9a9;
+	-webkit-box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
+
+	width: 8rem;
+	text-align: right;
+	padding-right: 0.3rem;
+}
+
+.backplate .label {
+	text-align: right;
+}
+
+.backplate .value {
+	padding-left: 0.5rem;
+}
