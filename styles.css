@@ -1,15 +1,14 @@
 .main {
 	margin: 1rem;
+	max-width: 1400px;
+	min-width: 300px;
 }
 
 .logo-holder {
-	max-width: 7rem;
-	text-align: center;
-	align-content: center;
+	text-align: right;
 }
 
 .logo {
-	text-align: center;
 	width: 100%;
 	height: auto;
 	max-width: calc(70px + 4vw);
@@ -17,26 +16,31 @@
 }
 
 .title-holder {
-	margin: 1rem;
-	text-align: center;	
+	text-align: left;
+	height: 100%;
+	display: table;
+}
+
+.title-and-sub {
+	display: table-cell;
+	vertical-align: middle;
 }
 
 .title {
 	font-weight: bold;
 	font-size: calc(24px + 2vw);
 	line-height: 1;
-	vertical-align: middle;
 }
 
 .subtitle {
 	color: #0099FF;
 	font-size: calc(8px + 0.8vw);
-	vertical-align: middle;
 }
 
 .applet-holder {
-	margin-top: 0.5rem;
 	max-width: 1000px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .backplate {
@@ -44,14 +48,13 @@
 	border: 2px;
 	border-color: steelblue;
 
-	padding: 10px;
-
-	max-width: 1000px;
+	margin-left: 0.05em;
+	margin-right: 0.05em;
 
 	color: #3B5957;
     background-color: #5D8D89;
     text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
-    font-size: x-large;
+    font-size: calc(1em + 0.8vw);
 
     border:6px outset #9a9;
     -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
@@ -67,17 +70,7 @@
 	-webkit-box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
 	-moz-box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
 
-	width: 5rem;
-	text-align: right;
-	padding-right: 0.3rem;
-}
-
-.backplate .name-input {
-	border: 2px inset #9a9;
-	-webkit-box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
-	-moz-box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
-
-	width: 8rem;
+	width: 3.3em;
 	text-align: right;
 	padding-right: 0.3rem;
 }
@@ -88,4 +81,11 @@
 
 .backplate .value {
 	padding-left: 0.5rem;
+}
+
+.details-table {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	min-width: 9.5em;
+	max-width: ;
 }
