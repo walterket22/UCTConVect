@@ -7,7 +7,7 @@ const POINT_SIZE = 2;
 const POINT_STYLE = 0;
 
 
-var appletParams = { "id": "app1", "width": 1000, "height": 600, "showToolBar": true, "customToolBar": "0 | 7 37 | 2 3 4 5 | 10 11 | 6", "borderColor": null,"showMenuBar": true, "showLogging": false, "showAlgebraInput": false, "showResetIcon": true, "enableLabelDrags": false, "enableShiftDragZoom": true, "enableRightClick": false, "capturingThreshold": null, "showToolBarHelp": false, "errorDialogsActive": true, "useBrowserForJS": false, "allowUpscale": false, "rounding": "5s" };
+var appletParams = { "id": "app1", "width": 950, "height": 640, "showToolBar": true, "customToolBar": "0 | 7 37 | 2 3 4 5 | 10 11 | 6", "borderColor": "#3B5957","showMenuBar": true, "showLogging": false, "showAlgebraInput": false, "showResetIcon": true, "enableLabelDrags": false, "enableShiftDragZoom": true, "enableRightClick": false, "capturingThreshold": null, "showToolBarHelp": false, "errorDialogsActive": true, "useBrowserForJS": false, "allowUpscale": false, "rounding": "5s" };
 appletParams.appletOnLoad = function(api) {
 	function clickListener(obj) {
 		setSelected(obj);
