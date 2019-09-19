@@ -7,7 +7,7 @@ const POINT_SIZE = 2;
 const POINT_STYLE = 0;
 
 
-var appletParams = { "id": "app1", "width": 950, "height": 640, "showToolBar": true, "customToolBar": "0 | 7 37 | 2 3 4 5 | 10 11 | 6", "borderColor": "#3B5957","showMenuBar": true, "showLogging": false, "showAlgebraInput": false, "showResetIcon": true, "enableLabelDrags": false, "enableShiftDragZoom": true, "enableRightClick": false, "capturingThreshold": null, "showToolBarHelp": false, "errorDialogsActive": true, "useBrowserForJS": false, "allowUpscale": false, "rounding": "5s" };
+var appletParams = { "id": "app1", "width": 950, "height": 640, "showToolBar": true, "customToolBar": "0 | 7 37 | 2 3 4 5 | 10 | 6", "borderColor": "#3B5957","showMenuBar": true, "showLogging": false, "showAlgebraInput": false, "showResetIcon": true, "enableLabelDrags": false, "enableShiftDragZoom": true, "enableRightClick": false, "capturingThreshold": null, "showToolBarHelp": false, "errorDialogsActive": true, "useBrowserForJS": false, "allowUpscale": false, "rounding": "5s" };
 appletParams.appletOnLoad = function(api) {
 	function clickListener(obj) {
 		setSelected(obj);
@@ -248,17 +248,19 @@ function setLineAngle(obj, angle) {
 
 function setCircleRadius(obj, radius) {
 	if (app1.getObjectType(obj) == "circle") {
-		// TODO: fix bug with below code!
+		str = app1.getCommandString(obj);
 
-		// str = app1.getCommandString(obj);
-
-		// startBracket = str.indexOf("(");
-		// comma = str.indexOf(",");
-		// startPoint = str.substring(startBracket + 1, comma);
-
-		// foo = obj + " = Circle(" + startPoint + ", " + radius + ")";
-		// app1.evalCommand(foo);
-
+		startBracket = str.indexOf("(");
+		comma = str.indexOf(",");
+		endBracket = str.indexOf(")");
+		startPoint = str.substring(startBracket + 1, comma);
+		endPoint = str.substring(comma + 2, endBracket);
+		
+		app1.evalCommand("newPoint = " + startPoint + " + (" + radius + "; 0)");
+		x = app1.getXcoord("newPoint");
+		y = app1.getYcoord("newPoint");
+		app1.deleteObject("newPoint");
+		app1.setCoords(endPoint, x, y);
 		setSelected(obj);
 	}
 }
